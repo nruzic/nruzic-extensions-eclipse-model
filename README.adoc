@@ -1,0 +1,3 @@
+= My Eclipse Modeling Framework extensions.
+
+INFO: For build instructions please see http://www.vogella.com/tutorials/EclipseTycho/article.html
