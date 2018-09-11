@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated prototype -->
       <package
-            uri="http:///com/github/nruzic/commons/model/profile/general.ecore"
+            uri="http://github.com/nruzic/commons/model/profile/general.ecore"
             class="com.github.nruzic.commons.model.profile.general.GeneralPackage"
             genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
    </extension>
@@ -17,7 +17,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated prototype -->
       <package
-            uri="http:///com/github/nruzic/commons/model/profile/applications.ecore"
+            uri="http://github.com/nruzic/commons/model/profile/applications.ecore"
             class="com.github.nruzic.commons.model.profile.applications.ApplicationsPackage"
             genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
    </extension>
@@ -25,7 +25,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated prototype -->
       <package
-            uri="http:///com/github/nruzic/commons/model/profile/devices.ecore"
+            uri="http://github.com/nruzic/commons/model/profile/devices.ecore"
             class="com.github.nruzic.commons.model.profile.devices.DevicesPackage"
             genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
    </extension>
@@ -33,7 +33,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated prototype -->
       <package
-            uri="http:///com/github/nruzic/commons/model/profile/test.ecore"
+            uri="http://github.com/nruzic/commons/model/profile/test.ecore"
             class="com.github.nruzic.commons.model.profile.test.TestPackage"
             genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
    </extension>
@@ -41,7 +41,7 @@
          point="org.eclipse.emf.ecore.uri_mapping">
       <mapping
             source="pathmap://NRUZIC_COMMONS_MODEL/"
-            target="platform:/plugin/nruzic-commons-model/">
+            target="platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/">
       </mapping>
    </extension>
    <extension

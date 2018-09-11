@@ -10,6 +10,7 @@
     <artifactId>com.github.nruzic.extensions.eclipse.model.update</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>eclipse-repository</packaging>
+    <name>Nruzic EMF Extensions Update Site</name>
 
     <build>
         <pluginManagement>
