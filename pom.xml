@@ -4,8 +4,9 @@
     <parent>
         <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
         <artifactId>com.github.nruzic.extensions.eclipse.model.configuration</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <relativePath>./releng/com.github.nruzic.extensions.eclipse.model.configuration</relativePath>
+        <version>1.0.0</version>
+        <!--<relativePath>./releng/com.github.nruzic.extensions.eclipse.model.configuration</relativePath>-->
+        <relativePath></relativePath>
     </parent>
 
     <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
