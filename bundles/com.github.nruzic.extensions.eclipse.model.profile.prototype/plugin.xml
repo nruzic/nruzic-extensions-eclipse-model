@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated prototype -->
+      <package
+            uri="http:///com/github/nruzic/commons/model/profile/general.ecore"
+            class="com.github.nruzic.commons.model.profile.general.GeneralPackage"
+            genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated prototype -->
+      <package
+            uri="http:///com/github/nruzic/commons/model/profile/applications.ecore"
+            class="com.github.nruzic.commons.model.profile.applications.ApplicationsPackage"
+            genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated prototype -->
+      <package
+            uri="http:///com/github/nruzic/commons/model/profile/devices.ecore"
+            class="com.github.nruzic.commons.model.profile.devices.DevicesPackage"
+            genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated prototype -->
+      <package
+            uri="http:///com/github/nruzic/commons/model/profile/test.ecore"
+            class="com.github.nruzic.commons.model.profile.test.TestPackage"
+            genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
+   </extension>
+   <extension
+         point="org.eclipse.emf.ecore.uri_mapping">
+      <mapping
+            source="pathmap://NRUZIC_COMMONS_MODEL/"
+            target="platform:/plugin/nruzic-commons-model/">
+      </mapping>
+   </extension>
+   <extension
+         point="org.eclipse.uml2.uml.generated_package">
+      <profile
+            location="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_iKNq8LEZEeiJzoL1Wg174w"
+            uri="http://github.com/nruzic/commons/model/profile/devices.ecore">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
+      <profile
+            description="Commons profiles from nruzic"
+            iconpath="com/github/nruzic/commons/model/x.svg"
+            name="Nruzic Commons Model Profiles"
+            path="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml"
+            provider="nikola.ruzic.dev@gmail.com"
+            qualifiednames="com::github::nruzic::commons::model::profile::applications,com::github::nruzic::commons::model::profile::devices,com::github::nruzic::commons::model::profile::general">
+      </profile>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.gmfdiag.css.theme">
+      <themeDefinition
+            icon="com/github/nruzic/commons/model/x.svg"
+            id="com.github.nruzic.commons.model.css.default_papyrus_theme"
+            label="Nruzic Commons Model Default Theme">
+      </themeDefinition>
+      <themeContribution
+            id="com.github.nruzic.commons.model.css.default_papyrus_theme">
+         <stylesheet
+               stylesheetPath="com/github/nruzic/commons/model/actor.css">
+         </stylesheet>
+      </themeContribution>
+      <themeContribution
+            id="org.eclipse.papyrus.css.papyrus_theme">
+         <stylesheet
+               stylesheetPath="com/github/nruzic/commons/model/actor.css">
+         </stylesheet>
+      </themeContribution>
+   </extension>
+
+</plugin>

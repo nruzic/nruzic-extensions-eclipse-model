@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="com" nsURI="http:///com.ecore" nsPrefix="com">
+  <eSubpackages name="github" nsURI="http:///com/github.ecore" nsPrefix="com.github">
+    <eSubpackages name="nruzic" nsURI="http:///com/github/nruzic.ecore" nsPrefix="com.github.nruzic">
+      <eSubpackages name="commons" nsURI="http:///com/github/nruzic/commons.ecore"
+          nsPrefix="com.github.nruzic.commons">
+        <eSubpackages name="model" nsURI="http:///com/github/nruzic/commons/model.ecore"
+            nsPrefix="com.github.nruzic.commons.model">
+          <eSubpackages name="profile" nsURI="http:///com/github/nruzic/commons/model/profile.ecore"
+              nsPrefix="com.github.nruzic.commons.model.profile">
+            <eSubpackages name="general" nsURI="http:///com/github/nruzic/commons/model/profile/general.ecore"
+                nsPrefix="com.github.nruzic.commons.model.profile.general">
+              <eClassifiers xsi:type="ecore:EClass" name="subsystem">
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
+              </eClassifiers>
+            </eSubpackages>
+            <eSubpackages name="applications" nsURI="http:///com/github/nruzic/commons/model/profile/applications.ecore"
+                nsPrefix="com.github.nruzic.commons.model.profile.applications">
+              <eClassifiers xsi:type="ecore:EClass" name="application">
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Component"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Component"/>
+              </eClassifiers>
+            </eSubpackages>
+            <eSubpackages name="devices" nsURI="http:///com/github/nruzic/commons/model/profile/devices.ecore"
+                nsPrefix="com.github.nruzic.commons.model.profile.devices">
+              <eClassifiers xsi:type="ecore:EClass" name="device">
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Component"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Component"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Node"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Node"/>
+              </eClassifiers>
+              <eClassifiers xsi:type="ecore:EClass" name="car" eSuperTypes="#//github/nruzic/commons/model/profile/devices/device"/>
+              <eClassifiers xsi:type="ecore:EClass" name="phone" eSuperTypes="#//github/nruzic/commons/model/profile/devices/device"/>
+            </eSubpackages>
+            <eSubpackages name="test" nsURI="http:///com/github/nruzic/commons/model/profile/test.ecore"
+                nsPrefix="com.github.nruzic.commons.model.profile.test">
+              <eClassifiers xsi:type="ecore:EClass" name="test">
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Component"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Component"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Node"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Node"/>
+              </eClassifiers>
+            </eSubpackages>
+          </eSubpackages>
+        </eSubpackages>
+      </eSubpackages>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>

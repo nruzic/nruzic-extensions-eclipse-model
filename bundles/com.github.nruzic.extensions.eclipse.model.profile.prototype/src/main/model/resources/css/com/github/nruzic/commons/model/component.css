@@ -1,0 +1,17 @@
+Component[appliedStereotypes~="car"] > Compartment {
+    visible: false;
+}
+
+Component[appliedStereotypes~="car"] > Compartment[type="compartment_shape_display"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="car"] {
+    elementIcon:false;
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}

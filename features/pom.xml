@@ -1,0 +1,18 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
+        <artifactId>com.github.nruzic.extensions.eclipse.model.root</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
+    <artifactId>com.github.nruzic.extensions.eclipse.model.features</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>com.github.nruzic.extensions.eclipse.model.profile.feature</module>
+    </modules>
+</project>

@@ -1,0 +1,59 @@
+Actor[appliedStereotypes~="car"] > Compartment {
+    visible: false;
+}
+
+Actor[appliedStereotypes~="car"] > Compartment[type="compartment_shape_display"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="car"] {
+    elementIcon:false;
+    shapeVisibility: false;
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+	svgFile: "platform:/plugin/nruzic-commons-model/com/github/nruzic/commons/model/car.svg";
+}
+
+Actor[appliedStereotypes~="device"] > Compartment {
+    visible: false;
+}
+
+Actor[appliedStereotypes~="device"] > Compartment[type="compartment_shape_display"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="device"] {
+    elementIcon:false;
+    shapeVisibility: false;
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+	svgFile: "platform:/plugin/nruzic-commons-model/com/github/nruzic/commons/model/device.svg";
+}
+
+Actor[appliedStereotypes~="application"] > Compartment {
+    visible: false;
+}
+
+Actor[appliedStereotypes~="application"] > Compartment[type="compartment_shape_display"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="application"] {
+    elementIcon:false;
+    shapeVisibility: false;
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+	svgFile: "platform:/plugin/nruzic-commons-model/com/github/nruzic/commons/model/application.svg";
+}

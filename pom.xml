@@ -1,0 +1,22 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
+        <artifactId>com.github.nruzic.extensions.eclipse.model.configuration</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>./releng/com.github.nruzic.extensions.eclipse.model.configuration</relativePath>
+    </parent>
+
+    <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
+    <artifactId>com.github.nruzic.extensions.eclipse.model.root</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>bundles</module>
+        <module>features</module>
+        <module>releng</module>
+    </modules>
+
+</project>
