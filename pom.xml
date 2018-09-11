@@ -20,4 +20,19 @@
         <module>releng</module>
     </modules>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <configuration>
+                        <checkModificationExcludes>
+                            <checkModificationExclude>**/.polyglot.build.properties</checkModificationExclude>
+                        </checkModificationExcludes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
