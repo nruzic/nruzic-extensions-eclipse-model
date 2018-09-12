@@ -20,4 +20,18 @@
         <module>releng</module>
     </modules>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>1.10.0</version>
+                    <configuration>
+                        <excludes>.polyglot.build.properties,**/.polyglot.build.properties</excludes>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
