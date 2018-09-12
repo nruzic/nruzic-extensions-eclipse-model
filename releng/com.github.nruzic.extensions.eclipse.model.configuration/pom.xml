@@ -141,9 +141,9 @@
                             by perform step which is triggered by releaseProfiles tag -->
                         <arguments>-DdoRelease</arguments>
                         <!-- prepare settings -->
-                        <preparationGoals>clean org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata verify site org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</preparationGoals>
+                        <preparationGoals>clean org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin verify site</preparationGoals>
                         <!-- completion settings -->
-                        <completionGoals>clean org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata verify site org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</completionGoals>
+                        <completionGoals>clean org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin verify site</completionGoals>
                         <!-- perform settings -->
                         <useReleaseProfile>false</useReleaseProfile>
                         <releaseProfiles>release</releaseProfiles>
@@ -163,7 +163,7 @@
                             <configuration>
                                 <includes>**/pom.xml,**/META-INF/MANIFEST.MF, **/feature.xml, **/*.product,**/category.xml</includes>
                                 <excludes>**/target/**</excludes>
-                                <message>Changing the Eclipse files versions</message>
+                                <message>[maven-release-plugin] - Changing files version (CURRENT VERSION -> RELEASE VERSION -> NEXT DEVELOPMENT VERSION)</message>
                             </configuration>
                         </execution>
                     </executions>
