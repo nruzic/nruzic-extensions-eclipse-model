@@ -3,7 +3,7 @@
 
     <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
     <artifactId>com.github.nruzic.extensions.eclipse.model.configuration</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
     <name>Nruzic EMF Extensions Master POM</name>
     <description>Common master for nruzic extensions eclipse model projects</description>
@@ -20,7 +20,7 @@
         <url>https://github.com/nruzic/nruzic-extensions-eclipse-model</url>
         <connection>scm:git:http://github.com/nruzic/nruzic-extensions-eclipse-model.git</connection>
         <developerConnection>scm:git:git@github.com:nruzic/nruzic-extensions-eclipse-model.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>com.github.nruzic.extensions.eclipse.model.configuration-1.0.3</tag>
     </scm>
 
     <distributionManagement>
