@@ -141,9 +141,9 @@
                             by perform step which is triggered by releaseProfiles tag -->
                         <arguments>-DdoRelease</arguments>
                         <!-- prepare settings -->
-                        <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</preparationGoals>
+                        <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</preparationGoals>
                         <!-- completion settings -->
-                        <completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</completionGoals>
+                        <completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</completionGoals>
                         <!-- perform settings -->
                         <useReleaseProfile>false</useReleaseProfile>
                         <releaseProfiles>release</releaseProfiles>
