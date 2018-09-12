@@ -1,4 +1,4 @@
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -6,12 +6,12 @@
         <artifactId>com.github.nruzic.extensions.eclipse.model.configuration</artifactId>
         <version>1.0.0</version>
         <!--<relativePath>./releng/com.github.nruzic.extensions.eclipse.model.configuration</relativePath>-->
-        <relativePath></relativePath>
+        <relativePath />
     </parent>
 
     <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
     <artifactId>com.github.nruzic.extensions.eclipse.model.root</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -20,19 +20,15 @@
         <module>releng</module>
     </modules>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <configuration>
-                        <checkModificationExcludes>
-                            <checkModificationExclude>**/.polyglot.build.properties</checkModificationExclude>
-                        </checkModificationExcludes>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
+    <scm>
+        <url>https://github.com/nruzic/nruzic-extensions-eclipse-model</url>
+        <connection>scm:git:http://github.com/nruzic/nruzic-extensions-eclipse-model.git</connection>
+        <developerConnection>scm:git:git@github.com:nruzic/nruzic-extensions-eclipse-model.git</developerConnection>
+        <tag>com.github.nruzic.extensions.eclipse.model.root-1.0.0</tag>
+    </scm>
+    
+    <properties>
+        <!-- Skip the deployment here, submodules can override this property -->
+        <maven.deploy.skip>true</maven.deploy.skip>
+    </properties>
 </project>
