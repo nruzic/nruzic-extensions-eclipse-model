@@ -28,7 +28,7 @@
                     <artifactId>maven-scm-plugin</artifactId>
                     <version>1.10.0</version>
                     <configuration>
-                        <excludes>.polyglot.build.properties,**/.polyglot.build.properties</excludes>
+                        <excludes>features/com.github.nruzic.extensions.eclipse.model.profile.feature/.polyglot.build.properties</excludes>
                     </configuration>
                 </plugin>
             </plugins>
