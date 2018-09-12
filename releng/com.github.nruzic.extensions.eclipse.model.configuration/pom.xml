@@ -3,7 +3,7 @@
 
     <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
     <artifactId>com.github.nruzic.extensions.eclipse.model.configuration</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.6-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Nruzic EMF Extensions Master POM</name>
     <description>Common master for nruzic extensions eclipse model projects</description>
@@ -139,7 +139,7 @@
                         <!-- this is a hack to trigger custom release profile 
                             (not the one from master pom) during preparation step, in addition to execution 
                             by perform step which is triggered by releaseProfiles tag -->
-                        <arguments>-DdoRelease</arguments>
+                        <arguments>-DreleaseTasks</arguments>
                         <!-- prepare settings -->
                         <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</preparationGoals>
                         <!-- completion settings -->
@@ -163,7 +163,7 @@
                             <configuration>
                                 <includes>**/pom.xml,**/META-INF/MANIFEST.MF, **/feature.xml, **/*.product,**/category.xml</includes>
                                 <excludes>**/target/**</excludes>
-                                <message>Changing the Eclipse files versions</message>
+                                <message>[maven-release-plugin] - Changing files version (CURRENT VERSION -&gt; RELEASE VERSION -&gt; NEXT DEVELOPMENT VERSION)</message>
                             </configuration>
                         </execution>
                     </executions>
@@ -215,7 +215,7 @@
             <id>release</id>
             <activation>
                 <property>
-                    <name>doRelease</name>
+                    <name>releaseTasks</name>
                 </property>
             </activation>
             <build>

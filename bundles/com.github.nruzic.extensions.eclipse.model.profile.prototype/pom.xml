@@ -6,12 +6,10 @@
     <parent>
         <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
         <artifactId>com.github.nruzic.extensions.eclipse.model.bundles</artifactId>
-        <version>1.0.5-SNAPSHOT</version>
+        <version>1.0.6-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
     <artifactId>com.github.nruzic.extensions.eclipse.model.profile.prototype</artifactId>
-    <version>1.0.5-SNAPSHOT</version>
     <packaging>eclipse-plugin</packaging>
 
 </project>
