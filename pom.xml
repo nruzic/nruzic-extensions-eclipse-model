@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
         <artifactId>com.github.nruzic.extensions.eclipse.model.configuration</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
         <!--<relativePath>./releng/com.github.nruzic.extensions.eclipse.model.configuration</relativePath>-->
         <relativePath></relativePath>
     </parent>
@@ -20,31 +20,4 @@
         <module>releng</module>
     </modules>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-scm-plugin</artifactId>
-                    <version>1.10.0</version>
-                    <configuration>
-                        <excludes>**/*.build.properties</excludes>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.3</version>
-                    <configuration>
-                       <checkModificationExcludes>
-                          <checkModificationExclude>bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/.polyglot.build.properties</checkModificationExclude>
-                          <checkModificationExclude>features/com.github.nruzic.extensions.eclipse.model.profile.feature/.polyglot.build.properties</checkModificationExclude>
-                          <checkModificationExclude>.polyglot.build.properties</checkModificationExclude>
-                          <checkModificationExclude>**/.polyglot.build.properties</checkModificationExclude>
-                       </checkModificationExcludes>
-                    </configuration>
-                 </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
 </project>
