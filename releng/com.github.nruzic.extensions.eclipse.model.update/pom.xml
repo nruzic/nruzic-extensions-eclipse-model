@@ -4,11 +4,11 @@
     <parent>
         <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
         <artifactId>com.github.nruzic.extensions.eclipse.model.releng</artifactId>
-        <version>1.0.5-SNAPSHOT</version>
+        <version>1.0.5</version>
     </parent>
 
     <artifactId>com.github.nruzic.extensions.eclipse.model.update</artifactId>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.5</version>
     <packaging>eclipse-repository</packaging>
     <name>Nruzic EMF Extensions Update Site</name>
 
