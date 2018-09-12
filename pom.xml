@@ -37,6 +37,7 @@
                     <version>2.5.3</version>
                     <configuration>
                        <checkModificationExcludes>
+                          <checkModificationExclude>bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/.polyglot.build.properties</checkModificationExclude>
                           <checkModificationExclude>features/com.github.nruzic.extensions.eclipse.model.profile.feature/.polyglot.build.properties</checkModificationExclude>
                           <checkModificationExclude>.polyglot.build.properties</checkModificationExclude>
                           <checkModificationExclude>**/.polyglot.build.properties</checkModificationExclude>
