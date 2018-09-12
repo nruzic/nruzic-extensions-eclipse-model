@@ -1,11 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
         <artifactId>com.github.nruzic.extensions.eclipse.model.configuration</artifactId>
         <version>1.0.2</version>
-        <!--<relativePath>./releng/com.github.nruzic.extensions.eclipse.model.configuration</relativePath>-->
+        <!-- <relativePath>./releng/com.github.nruzic.extensions.eclipse.model.configuration</relativePath> -->
         <relativePath />
     </parent>
 
@@ -20,8 +22,11 @@
         <module>releng</module>
     </modules>
 
+    <scm>
+        <url>https://github.com/nruzic/nruzic-extensions-eclipse-model</url>
+        <connection>scm:git:http://github.com/nruzic/nruzic-extensions-eclipse-model.git</connection>
+        <developerConnection>scm:git:git@github.com:nruzic/nruzic-extensions-eclipse-model.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
-  <scm>
-    <tag>com.github.nruzic.extensions.eclipse.model.root-1.0.2</tag>
-  </scm>
 </project>
