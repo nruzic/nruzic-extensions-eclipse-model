@@ -4,12 +4,12 @@
     <parent>
         <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
         <artifactId>com.github.nruzic.extensions.eclipse.model.root</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </parent>
 
     <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
     <artifactId>com.github.nruzic.extensions.eclipse.model.releng</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
 
     <modules>
