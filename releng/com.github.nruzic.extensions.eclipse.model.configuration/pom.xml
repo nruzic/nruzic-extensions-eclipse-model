@@ -43,10 +43,11 @@
     </repositories>
 
     <properties>
-        <plugin-version-maven-source-plugin>3.0.1</plugin-version-maven-source-plugin>
-        <plugin-version-maven-assembly-plugin>3.1.0</plugin-version-maven-assembly-plugin>
-        <plugin-version-maven-javadoc-plugin>3.0.1</plugin-version-maven-javadoc-plugin>
-        <plugin-version-maven-release-plugin>2.5.3</plugin-version-maven-release-plugin>
+        <version-maven-source-plugin>3.0.1</version-maven-source-plugin>
+        <version-maven-assembly-plugin>3.1.0</version-maven-assembly-plugin>
+        <version-maven-javadoc-plugin>3.0.1</version-maven-javadoc-plugin>
+        <version-maven-release-plugin>2.5.3</version-maven-release-plugin>
+        <version-maven-scm-plugin>1.9.5</version-maven-scm-plugin>
         <version-maven-gpg-plugin>1.6</version-maven-gpg-plugin>
         <version-nexus-staging-maven-plugin>1.6.7</version-nexus-staging-maven-plugin>
 
@@ -72,9 +73,65 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-maven-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <extensions>true</extensions>
+                </plugin>
+                <!--Enable the replacement of the SNAPSHOT version in the final 
+                    product configuration -->
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-packaging-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                    <executions>
+                        <execution>
+                            <phase>package</phase>
+                            <id>package-feature</id>
+                            <configuration>
+                                <finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>target-platform-configuration</artifactId>
+                    <version>${tycho.version}</version>
+                    <configuration>
+                        <environments>
+                            <environment>
+                                <os>linux</os>
+                                <ws>gtk</ws>
+                                <arch>x86</arch>
+                            </environment>
+                            <environment>
+                                <os>linux</os>
+                                <ws>gtk</ws>
+                                <arch>x86_64</arch>
+                            </environment>
+                            <environment>
+                                <os>win32</os>
+                                <ws>win32</ws>
+                                <arch>x86</arch>
+                            </environment>
+                            <environment>
+                                <os>win32</os>
+                                <ws>win32</ws>
+                                <arch>x86_64</arch>
+                            </environment>
+                            <environment>
+                                <os>macosx</os>
+                                <ws>cocoa</ws>
+                                <arch>x86_64</arch>
+                            </environment>
+                        </environments>
+                    </configuration>
+                </plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>${plugin-version-maven-release-plugin}</version>
+                    <version>${version-maven-release-plugin}</version>
                     <configuration>
                         <!-- automatically assign parent version to submodules 
                             if submodule is not specifying it's own version -->
@@ -84,13 +141,32 @@
                             by perform step which is triggered by releaseProfiles tag -->
                         <arguments>-DdoRelease</arguments>
                         <!-- prepare settings -->
-                        <preparationGoals>clean verify site</preparationGoals>
+                        <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</preparationGoals>
                         <!-- completion settings -->
-                        <completionGoals>clean verify site</completionGoals>
+                        <completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho-version}:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:add org.apache.maven.plugins:maven-scm-plugin:${version-maven-scm-plugin}:checkin</completionGoals>
                         <!-- perform settings -->
                         <useReleaseProfile>false</useReleaseProfile>
                         <releaseProfiles>release</releaseProfiles>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-plugin</artifactId>
+                    <version>${version-maven-scm-plugin}</version>
+                    <executions>
+                        <execution>
+                            <id>default-cli</id>
+                            <goals>
+                                <goal>add</goal>
+                                <goal>checkin</goal>
+                            </goals>
+                            <configuration>
+                                <includes>**/META-INF/MANIFEST.MF, **/feature.xml, **/*.product,**/category.xml</includes>
+                                <excludes>**/target/**</excludes>
+                                <message>Changing the Eclipse files versions</message>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -112,58 +188,14 @@
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-maven-plugin</artifactId>
-                <version>${tycho.version}</version>
-                <extensions>true</extensions>
             </plugin>
-            <!--Enable the replacement of the SNAPSHOT version in the final 
-                product configuration -->
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>tycho-packaging-plugin</artifactId>
-                <version>${tycho.version}</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <id>package-feature</id>
-                        <configuration>
-                            <finalName>${project.artifactId}_${unqualifiedVersion}.${buildQualifier}</finalName>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>target-platform-configuration</artifactId>
-                <version>${tycho.version}</version>
-                <configuration>
-                    <environments>
-                        <environment>
-                            <os>linux</os>
-                            <ws>gtk</ws>
-                            <arch>x86</arch>
-                        </environment>
-                        <environment>
-                            <os>linux</os>
-                            <ws>gtk</ws>
-                            <arch>x86_64</arch>
-                        </environment>
-                        <environment>
-                            <os>win32</os>
-                            <ws>win32</ws>
-                            <arch>x86</arch>
-                        </environment>
-                        <environment>
-                            <os>win32</os>
-                            <ws>win32</ws>
-                            <arch>x86_64</arch>
-                        </environment>
-                        <environment>
-                            <os>macosx</os>
-                            <ws>cocoa</ws>
-                            <arch>x86_64</arch>
-                        </environment>
-                    </environments>
-                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -192,7 +224,7 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-source-plugin</artifactId>
-                            <version>${plugin-version-maven-source-plugin}</version>
+                            <version>${version-maven-source-plugin}</version>
                             <executions>
                                 <execution>
                                     <id>attach-sources</id>
@@ -206,7 +238,7 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-javadoc-plugin</artifactId>
-                            <version>${plugin-version-maven-javadoc-plugin}</version>
+                            <version>${version-maven-javadoc-plugin}</version>
                             <configuration>
                                 <!-- Default configuration for all executions -->
                                 <outputDirectory>${project.build.directory}/javadocs</outputDirectory>
@@ -252,7 +284,7 @@
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-assembly-plugin</artifactId>
-                            <version>${plugin-version-maven-assembly-plugin}</version>
+                            <version>${version-maven-assembly-plugin}</version>
                             <configuration>
                                 <descriptorSourceDirectory>${project.basedir}/src/main/assemblies</descriptorSourceDirectory>
                             </configuration>
