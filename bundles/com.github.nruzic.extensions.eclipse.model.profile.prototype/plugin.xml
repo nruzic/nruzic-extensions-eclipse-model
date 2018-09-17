@@ -55,7 +55,7 @@
          point="org.eclipse.papyrus.uml.extensionpoints.UMLProfile">
       <profile
             description="Commons profiles from nruzic"
-            iconpath="com/github/nruzic/commons/model/x.svg"
+            iconpath="com/github/nruzic/commons/model/profile/prototype/x.svg"
             name="Nruzic Commons Model Profiles"
             path="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml"
             provider="nikola.ruzic.dev@gmail.com"
@@ -65,20 +65,32 @@
    <extension
          point="org.eclipse.papyrus.infra.gmfdiag.css.theme">
       <themeDefinition
-            icon="com/github/nruzic/commons/model/x.svg"
+            icon="com/github/nruzic/commons/model/profile/prototype/x.svg"
             id="com.github.nruzic.commons.model.css.default_papyrus_theme"
             label="Nruzic Commons Model Default Theme">
       </themeDefinition>
       <themeContribution
             id="com.github.nruzic.commons.model.css.default_papyrus_theme">
          <stylesheet
-               stylesheetPath="com/github/nruzic/commons/model/actor.css">
+               stylesheetPath="com/github/nruzic/commons/model/profile/prototype/actor.css">
+         </stylesheet>
+      </themeContribution>
+      <themeContribution
+            id="com.github.nruzic.commons.model.css.default_papyrus_theme">
+         <stylesheet
+               stylesheetPath="com/github/nruzic/commons/model/profile/prototype/component.css">
          </stylesheet>
       </themeContribution>
       <themeContribution
             id="org.eclipse.papyrus.css.papyrus_theme">
          <stylesheet
-               stylesheetPath="com/github/nruzic/commons/model/actor.css">
+               stylesheetPath="com/github/nruzic/commons/model/profile/prototype/actor.css">
+         </stylesheet>
+      </themeContribution>
+      <themeContribution
+            id="org.eclipse.papyrus.css.papyrus_theme">
+         <stylesheet
+               stylesheetPath="com/github/nruzic/commons/model/profile/prototype/component.css">
          </stylesheet>
       </themeContribution>
    </extension>

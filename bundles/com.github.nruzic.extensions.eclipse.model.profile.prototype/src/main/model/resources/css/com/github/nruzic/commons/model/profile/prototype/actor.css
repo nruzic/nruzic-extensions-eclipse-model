@@ -15,16 +15,7 @@ Actor[appliedStereotypes~="car"] {
     displayBorder:false;
     displayName:true;
     followSVGSymbol:true;
-	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/car.svg";
-}
-
-Actor[appliedStereotypes~="device"] > Compartment {
-    visible: false;
-}
-
-Actor[appliedStereotypes~="device"] > Compartment[type="compartment_shape_display"] {
-    visible:true;
-    showTitle:false;
+	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/devices/car.svg";
 }
 
 Actor[appliedStereotypes~="device"] {
@@ -35,16 +26,7 @@ Actor[appliedStereotypes~="device"] {
     displayBorder:false;
     displayName:true;
     followSVGSymbol:true;
-	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/device.svg";
-}
-
-Actor[appliedStereotypes~="application"] > Compartment {
-    visible: false;
-}
-
-Actor[appliedStereotypes~="application"] > Compartment[type="compartment_shape_display"] {
-    visible:true;
-    showTitle:false;
+	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/devices/device.svg";
 }
 
 Actor[appliedStereotypes~="application"] {
@@ -55,5 +37,5 @@ Actor[appliedStereotypes~="application"] {
     displayBorder:false;
     displayName:true;
     followSVGSymbol:true;
-	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/application.svg";
+	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/applications/application.svg";
 }

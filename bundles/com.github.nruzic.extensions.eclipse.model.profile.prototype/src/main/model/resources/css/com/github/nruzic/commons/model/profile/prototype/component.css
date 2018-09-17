@@ -1,0 +1,50 @@
+Component[appliedStereotypes~="car"] > Compartment {
+    visible: false;
+}
+
+Component[appliedStereotypes~="car"] > Compartment[type="compartment_shape_display"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="car"] {
+    elementIcon:false;
+    shapeVisibility: false;
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/devices/car.svg";
+}
+
+Component[appliedStereotypes~="device"] {
+    elementIcon:false;
+    shapeVisibility: false;
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/devices/device.svg";
+}
+
+Component[appliedStereotypes~="application"] {
+    elementIcon:false;
+    shapeVisibility: false;
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+	svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/applications/application.svg";
+}
+
+
+Component[appliedStereotypes~="database"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
