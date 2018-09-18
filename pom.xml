@@ -11,7 +11,7 @@
 
     <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
     <artifactId>com.github.nruzic.extensions.eclipse.model.root</artifactId>
-    <version>1.0.6-SNAPSHOT</version>
+    <version>1.0.6</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -24,7 +24,7 @@
         <url>https://github.com/nruzic/nruzic-extensions-eclipse-model</url>
         <connection>scm:git:http://github.com/nruzic/nruzic-extensions-eclipse-model.git</connection>
         <developerConnection>scm:git:git@github.com:nruzic/nruzic-extensions-eclipse-model.git</developerConnection>
-        <tag>com.github.nruzic.extensions.eclipse.model.root-1.0.5</tag>
+        <tag>com.github.nruzic.extensions.eclipse.model.root-1.0.6</tag>
     </scm>
 
 </project>
