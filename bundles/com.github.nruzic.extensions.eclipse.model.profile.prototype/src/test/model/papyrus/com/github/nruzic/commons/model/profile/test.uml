@@ -1,66 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:devices="http://com.github.nruzic.commons.model.profile/schemas/devices/_tr16gLpuEeiH5PSkAxdKcQ/53" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://com.github.nruzic.commons.model.profile/schemas/devices/_tr16gLpuEeiH5PSkAxdKcQ/53 ../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_tr16gbpuEeiH5PSkAxdKcQ">
-  <uml:Model xmi:id="_SWjH4LpvEeiH5PSkAxdKcQ" name="test">
-    <packageImport xmi:type="uml:PackageImport" xmi:id="_Saqy4LpvEeiH5PSkAxdKcQ">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:applications="http://com.github.nruzic.commons.model.profile/schemas/applications/_ENHTgLspEeieBPrA0qveTg/61" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://com.github.nruzic.commons.model.profile/schemas/applications/_ENHTgLspEeieBPrA0qveTg/61 pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_ENH6kLspEeieBPrA0qveTg">
+  <uml:Model xmi:id="_U-oScLs1EeiBheUZfX6yug" name="test">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_VKqjULs1EeiBheUZfX6yug">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Component" xmi:id="_jwGNoLpvEeiH5PSkAxdKcQ" name="Component6"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_WMRm0LpwEeizn_tG10zCng" name="Actor7"/>
-    <packagedElement xmi:type="uml:Component" xmi:id="_DIjo0LpxEeizn_tG10zCng" name="Component8"/>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jBwg8LpvEeiH5PSkAxdKcQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jByWILpvEeiH5PSkAxdKcQ" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jByWIbpvEeiH5PSkAxdKcQ" key="Version" value="0.0.46"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jByWIrpvEeiH5PSkAxdKcQ" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jByWI7pvEeiH5PSkAxdKcQ" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jByWJLpvEeiH5PSkAxdKcQ" key="Date" value="2018-09-17"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jByWJbpvEeiH5PSkAxdKcQ" key="Author" value=""/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_i91UELs8EeiK0_1FtjNrHA" name="Actor5"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_oIKD4Ls8EeiK0_1FtjNrHA" name="Component6"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_19rGYLs1EeiQHsDVn_wrtQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1936sLs1EeiQHsDVn_wrtQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1936sbs1EeiQHsDVn_wrtQ" key="Version" value="0.0.54"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1936srs1EeiQHsDVn_wrtQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1936s7s1EeiQHsDVn_wrtQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1936tLs1EeiQHsDVn_wrtQ" key="Date" value="2018-09-18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1936tbs1EeiQHsDVn_wrtQ" key="Author" value=""/>
       </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jBxvELpvEeiH5PSkAxdKcQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_tr0FULpuEeiH5PSkAxdKcQ"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_19x0ELs1EeiQHsDVn_wrtQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_ENGscLspEeieBPrA0qveTg"/>
       </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_dxg8YLHJEei7lrpzegwxFQ"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_dxg8YLHJEei7lrpzegwxFQ"/>
     </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jByWJrpvEeiH5PSkAxdKcQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jBy9MbpvEeiH5PSkAxdKcQ" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jBy9MrpvEeiH5PSkAxdKcQ" key="Version" value="0.0.46"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jBy9M7pvEeiH5PSkAxdKcQ" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jBy9NLpvEeiH5PSkAxdKcQ" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jBy9NbpvEeiH5PSkAxdKcQ" key="Date" value="2018-09-17"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jBy9NrpvEeiH5PSkAxdKcQ" key="Author" value=""/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_195I0Ls1EeiQHsDVn_wrtQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_195v4Ls1EeiQHsDVn_wrtQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_195v4bs1EeiQHsDVn_wrtQ" key="Version" value="0.0.54"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_195v4rs1EeiQHsDVn_wrtQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_195v47s1EeiQHsDVn_wrtQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_195v5Ls1EeiQHsDVn_wrtQ" key="Date" value="2018-09-18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_195v5bs1EeiQHsDVn_wrtQ" key="Author" value=""/>
       </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jBy9MLpvEeiH5PSkAxdKcQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_tr0sYbpuEeiH5PSkAxdKcQ"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_195I0bs1EeiQHsDVn_wrtQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_ENJIsbspEeieBPrA0qveTg"/>
       </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_AOlNgLHKEei7lrpzegwxFQ"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_ORYZ4LHKEei7lrpzegwxFQ"/>
     </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jBzkQLpvEeiH5PSkAxdKcQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jB0LULpvEeiH5PSkAxdKcQ" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0LUbpvEeiH5PSkAxdKcQ" key="Version" value="0.0.46"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0LUrpvEeiH5PSkAxdKcQ" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0LU7pvEeiH5PSkAxdKcQ" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0LVLpvEeiH5PSkAxdKcQ" key="Date" value="2018-09-17"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0LVbpvEeiH5PSkAxdKcQ" key="Author" value=""/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_196W8Ls1EeiQHsDVn_wrtQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_196-Abs1EeiQHsDVn_wrtQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_196-Ars1EeiQHsDVn_wrtQ" key="Version" value="0.0.54"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_196-A7s1EeiQHsDVn_wrtQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_196-BLs1EeiQHsDVn_wrtQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_196-Bbs1EeiQHsDVn_wrtQ" key="Date" value="2018-09-18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_196-Brs1EeiQHsDVn_wrtQ" key="Author" value=""/>
       </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jBzkQbpvEeiH5PSkAxdKcQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_tr16gbpuEeiH5PSkAxdKcQ"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_196-ALs1EeiQHsDVn_wrtQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_ENH6kLspEeieBPrA0qveTg"/>
       </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_ORYZ4LHKEei7lrpzegwxFQ"/>
-    </profileApplication>
-    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jB0LVrpvEeiH5PSkAxdKcQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jB0yYbpvEeiH5PSkAxdKcQ" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0yYrpvEeiH5PSkAxdKcQ" key="Version" value="0.0.46"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0yY7pvEeiH5PSkAxdKcQ" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0yZLpvEeiH5PSkAxdKcQ" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0yZbpvEeiH5PSkAxdKcQ" key="Date" value="2018-09-17"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jB0yZrpvEeiH5PSkAxdKcQ" key="Author" value=""/>
-      </eAnnotations>
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jB0yYLpvEeiH5PSkAxdKcQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_tr3vsLpuEeiH5PSkAxdKcQ"/>
-      </eAnnotations>
-      <appliedProfile xmi:type="uml:Profile" href="../../../../../../../../../../../com.github.nruzic.extensions.eclipse/nruzic-extensions-eclipse-model/bundles/com.github.nruzic.extensions.eclipse.model.profile.prototype/src/main/model/papyrus/com/github/nruzic/commons/model/profile/prototype.uml#_nGhy0LKsEei6nMCpvx-sNg"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_AOlNgLHKEei7lrpzegwxFQ"/>
     </profileApplication>
   </uml:Model>
-  <devices:device xmi:id="_ZS6noLpwEeizn_tG10zCng" base_Actor="_WMRm0LpwEeizn_tG10zCng"/>
-  <devices:device xmi:id="_c9_LMLpwEeizn_tG10zCng" base_Component="_jwGNoLpvEeiH5PSkAxdKcQ"/>
-  <devices:car xmi:id="_E0pXMLpxEeizn_tG10zCng" base_Component="_DIjo0LpxEeizn_tG10zCng"/>
+  <applications:application xmi:id="_ks-WcLs8EeiK0_1FtjNrHA" base_Actor="_i91UELs8EeiK0_1FtjNrHA"/>
+  <applications:application xmi:id="_pGkz8Ls8EeiK0_1FtjNrHA" base_Component="_oIKD4Ls8EeiK0_1FtjNrHA"/>
 </xmi:XMI>
