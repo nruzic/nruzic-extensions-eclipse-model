@@ -75,6 +75,44 @@ Actor[appliedStereotypes~="application"] {
     svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/applications/application.svg";
 }
 
+Actor[appliedStereotypes~="thin-client"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="thin-client"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="thin-client"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/applications/application-web.svg";
+}
+
+Actor[appliedStereotypes~="thick-client"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="thick-client"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="thick-client"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/applications/application-desktop.svg";
+}
+
 Actor[appliedStereotypes~="database"] > Compartment {
     visible: false;
     showTitle:false;

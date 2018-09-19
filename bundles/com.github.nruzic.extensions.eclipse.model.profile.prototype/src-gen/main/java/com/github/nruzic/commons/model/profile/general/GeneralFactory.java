@@ -12,32 +12,58 @@ import org.eclipse.emf.ecore.EFactory;
  * @see com.github.nruzic.commons.model.profile.general.GeneralPackage
  * @generated
  */
-public interface GeneralFactory extends EFactory
-{
-    /**
-     * The singleton instance of the factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    GeneralFactory eINSTANCE = com.github.nruzic.commons.model.profile.general.impl.GeneralFactoryImpl.init();
+public interface GeneralFactory extends EFactory {
+	/**
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	GeneralFactory eINSTANCE = com.github.nruzic.commons.model.profile.general.impl.GeneralFactoryImpl.init();
 
-    /**
-     * Returns a new object of class '<em>subsystem</em>'.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return a new object of class '<em>subsystem</em>'.
-     * @generated
-     */
-    subsystem createsubsystem();
+	/**
+	 * Returns a new object of class '<em>subsystem</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>subsystem</em>'.
+	 * @generated
+	 */
+	subsystem createsubsystem();
 
-    /**
-     * Returns the package supported by this factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return the package supported by this factory.
-     * @generated
-     */
-    GeneralPackage getGeneralPackage();
+	/**
+	 * Returns a new object of class '<em>external</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>external</em>'.
+	 * @generated
+	 */
+	external createexternal();
+
+	/**
+	 * Returns a new object of class '<em>internal</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>internal</em>'.
+	 * @generated
+	 */
+	internal createinternal();
+
+	/**
+	 * Returns a new object of class '<em>database</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>database</em>'.
+	 * @generated
+	 */
+	database createdatabase();
+
+	/**
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
+	GeneralPackage getGeneralPackage();
 
 } //GeneralFactory

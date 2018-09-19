@@ -12,50 +12,49 @@ import org.eclipse.emf.ecore.EFactory;
  * @see com.github.nruzic.commons.model.profile.devices.DevicesPackage
  * @generated
  */
-public interface DevicesFactory extends EFactory
-{
-    /**
-     * The singleton instance of the factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    DevicesFactory eINSTANCE = com.github.nruzic.commons.model.profile.devices.impl.DevicesFactoryImpl.init();
+public interface DevicesFactory extends EFactory {
+	/**
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	DevicesFactory eINSTANCE = com.github.nruzic.commons.model.profile.devices.impl.DevicesFactoryImpl.init();
 
-    /**
-     * Returns a new object of class '<em>device</em>'.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return a new object of class '<em>device</em>'.
-     * @generated
-     */
-    device createdevice();
+	/**
+	 * Returns a new object of class '<em>device</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>device</em>'.
+	 * @generated
+	 */
+	device createdevice();
 
-    /**
-     * Returns a new object of class '<em>car</em>'.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return a new object of class '<em>car</em>'.
-     * @generated
-     */
-    car createcar();
+	/**
+	 * Returns a new object of class '<em>car</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>car</em>'.
+	 * @generated
+	 */
+	car createcar();
 
-    /**
-     * Returns a new object of class '<em>phone</em>'.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return a new object of class '<em>phone</em>'.
-     * @generated
-     */
-    phone createphone();
+	/**
+	 * Returns a new object of class '<em>phone</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>phone</em>'.
+	 * @generated
+	 */
+	phone createphone();
 
-    /**
-     * Returns the package supported by this factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return the package supported by this factory.
-     * @generated
-     */
-    DevicesPackage getDevicesPackage();
+	/**
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
+	DevicesPackage getDevicesPackage();
 
 } //DevicesFactory

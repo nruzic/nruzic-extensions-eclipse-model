@@ -3,7 +3,6 @@
 package com.github.nruzic.commons.model.profile.applications.impl;
 
 import com.github.nruzic.commons.model.profile.applications.ApplicationsPackage;
-import com.github.nruzic.commons.model.profile.applications.application;
 import com.github.nruzic.commons.model.profile.applications.thinclientapplication;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -12,23 +11,24 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.uml2.uml.Component;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>application</b></em>'.
+ * An implementation of the model object '<em><b>thinclientapplication</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.github.nruzic.commons.model.profile.applications.impl.applicationImpl#getBase_Component <em>Base Component</em>}</li>
+ *   <li>{@link com.github.nruzic.commons.model.profile.applications.impl.thinclientapplicationImpl#getBase_Component <em>Base Component</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class applicationImpl extends thickclientapplicationImpl implements application {
+public class thinclientapplicationImpl extends MinimalEObjectImpl.Container implements thinclientapplication {
 	/**
 	 * The cached value of the '{@link #getBase_Component() <em>Base Component</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -44,7 +44,7 @@ public class applicationImpl extends thickclientapplicationImpl implements appli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected applicationImpl() {
+	protected thinclientapplicationImpl() {
 		super();
 	}
 
@@ -55,7 +55,7 @@ public class applicationImpl extends thickclientapplicationImpl implements appli
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ApplicationsPackage.Literals.APPLICATION;
+		return ApplicationsPackage.Literals.THINCLIENTAPPLICATION;
 	}
 
 	/**
@@ -69,7 +69,7 @@ public class applicationImpl extends thickclientapplicationImpl implements appli
 			base_Component = (Component)eResolveProxy(oldBase_Component);
 			if (base_Component != oldBase_Component) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ApplicationsPackage.APPLICATION__BASE_COMPONENT, oldBase_Component, base_Component));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ApplicationsPackage.THINCLIENTAPPLICATION__BASE_COMPONENT, oldBase_Component, base_Component));
 			}
 		}
 		return base_Component;
@@ -93,7 +93,7 @@ public class applicationImpl extends thickclientapplicationImpl implements appli
 		Component oldBase_Component = base_Component;
 		base_Component = newBase_Component;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationsPackage.APPLICATION__BASE_COMPONENT, oldBase_Component, base_Component));
+			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationsPackage.THINCLIENTAPPLICATION__BASE_COMPONENT, oldBase_Component, base_Component));
 	}
 
 	/**
@@ -104,7 +104,7 @@ public class applicationImpl extends thickclientapplicationImpl implements appli
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ApplicationsPackage.APPLICATION__BASE_COMPONENT:
+			case ApplicationsPackage.THINCLIENTAPPLICATION__BASE_COMPONENT:
 				if (resolve) return getBase_Component();
 				return basicGetBase_Component();
 		}
@@ -119,7 +119,7 @@ public class applicationImpl extends thickclientapplicationImpl implements appli
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ApplicationsPackage.APPLICATION__BASE_COMPONENT:
+			case ApplicationsPackage.THINCLIENTAPPLICATION__BASE_COMPONENT:
 				setBase_Component((Component)newValue);
 				return;
 		}
@@ -134,7 +134,7 @@ public class applicationImpl extends thickclientapplicationImpl implements appli
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ApplicationsPackage.APPLICATION__BASE_COMPONENT:
+			case ApplicationsPackage.THINCLIENTAPPLICATION__BASE_COMPONENT:
 				setBase_Component((Component)null);
 				return;
 		}
@@ -149,42 +149,10 @@ public class applicationImpl extends thickclientapplicationImpl implements appli
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ApplicationsPackage.APPLICATION__BASE_COMPONENT:
+			case ApplicationsPackage.THINCLIENTAPPLICATION__BASE_COMPONENT:
 				return base_Component != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
-		if (baseClass == thinclientapplication.class) {
-			switch (derivedFeatureID) {
-				case ApplicationsPackage.APPLICATION__BASE_COMPONENT: return ApplicationsPackage.THINCLIENTAPPLICATION__BASE_COMPONENT;
-				default: return -1;
-			}
-		}
-		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
-		if (baseClass == thinclientapplication.class) {
-			switch (baseFeatureID) {
-				case ApplicationsPackage.THINCLIENTAPPLICATION__BASE_COMPONENT: return ApplicationsPackage.APPLICATION__BASE_COMPONENT;
-				default: return -1;
-			}
-		}
-		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
-	}
-
-} //applicationImpl
+} //thinclientapplicationImpl

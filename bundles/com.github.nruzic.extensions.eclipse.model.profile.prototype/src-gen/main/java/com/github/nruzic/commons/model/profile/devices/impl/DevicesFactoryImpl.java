@@ -18,113 +18,100 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class DevicesFactoryImpl extends EFactoryImpl implements DevicesFactory
-{
-    /**
-     * Creates the default factory implementation.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public static DevicesFactory init()
-    {
-        try
-        {
-            DevicesFactory theDevicesFactory = (DevicesFactory)EPackage.Registry.INSTANCE.getEFactory(DevicesPackage.eNS_URI);
-            if (theDevicesFactory != null)
-            {
-                return theDevicesFactory;
-            }
-        }
-        catch (Exception exception)
-        {
-            EcorePlugin.INSTANCE.log(exception);
-        }
-        return new DevicesFactoryImpl();
-    }
+public class DevicesFactoryImpl extends EFactoryImpl implements DevicesFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static DevicesFactory init() {
+		try {
+			DevicesFactory theDevicesFactory = (DevicesFactory)EPackage.Registry.INSTANCE.getEFactory(DevicesPackage.eNS_URI);
+			if (theDevicesFactory != null) {
+				return theDevicesFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new DevicesFactoryImpl();
+	}
 
-    /**
-     * Creates an instance of the factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DevicesFactoryImpl()
-    {
-        super();
-    }
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DevicesFactoryImpl() {
+		super();
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public EObject create(EClass eClass)
-    {
-        switch (eClass.getClassifierID())
-        {
-            case DevicesPackage.DEVICE: return createdevice();
-            case DevicesPackage.CAR: return createcar();
-            case DevicesPackage.PHONE: return createphone();
-            default:
-                throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-        }
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case DevicesPackage.DEVICE: return createdevice();
+			case DevicesPackage.CAR: return createcar();
+			case DevicesPackage.PHONE: return createphone();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public device createdevice()
-    {
-        deviceImpl device = new deviceImpl();
-        return device;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public device createdevice() {
+		deviceImpl device = new deviceImpl();
+		return device;
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public car createcar()
-    {
-        carImpl car = new carImpl();
-        return car;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public car createcar() {
+		carImpl car = new carImpl();
+		return car;
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public phone createphone()
-    {
-        phoneImpl phone = new phoneImpl();
-        return phone;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public phone createphone() {
+		phoneImpl phone = new phoneImpl();
+		return phone;
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DevicesPackage getDevicesPackage()
-    {
-        return (DevicesPackage)getEPackage();
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DevicesPackage getDevicesPackage() {
+		return (DevicesPackage)getEPackage();
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @deprecated
-     * @generated
-     */
-    @Deprecated
-    public static DevicesPackage getPackage()
-    {
-        return DevicesPackage.eINSTANCE;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static DevicesPackage getPackage() {
+		return DevicesPackage.eINSTANCE;
+	}
 
 } //DevicesFactoryImpl

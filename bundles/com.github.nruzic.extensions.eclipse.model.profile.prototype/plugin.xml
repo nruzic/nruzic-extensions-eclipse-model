@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated prototype -->
       <package
-            uri="http://github.com/nruzic/commons/model/profile/general.ecore"
+            uri="http:///com/github/nruzic/commons/model/profile/general.ecore"
             class="com.github.nruzic.commons.model.profile.general.GeneralPackage"
             genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
    </extension>
@@ -17,7 +17,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated prototype -->
       <package
-            uri="http://github.com/nruzic/commons/model/profile/applications.ecore"
+            uri="http:///com/github/nruzic/commons/model/profile/applications.ecore"
             class="com.github.nruzic.commons.model.profile.applications.ApplicationsPackage"
             genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
    </extension>
@@ -25,7 +25,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated prototype -->
       <package
-            uri="http://github.com/nruzic/commons/model/profile/devices.ecore"
+            uri="http:///com/github/nruzic/commons/model/profile/devices.ecore"
             class="com.github.nruzic.commons.model.profile.devices.DevicesPackage"
             genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
    </extension>
@@ -33,7 +33,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated prototype -->
       <package
-            uri="http://github.com/nruzic/commons/model/profile/test.ecore"
+            uri="http:///com/github/nruzic/commons/model/profile/test.ecore"
             class="com.github.nruzic.commons.model.profile.test.TestPackage"
             genModel="src/main/model/papyrus/com/github/nruzic/commons/model/generator/prototype.genmodel"/>
    </extension>

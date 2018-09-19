@@ -14,27 +14,24 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class carImpl extends deviceImpl implements car
-{
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected carImpl()
-    {
-        super();
-    }
+public class carImpl extends deviceImpl implements car {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected carImpl() {
+		super();
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    protected EClass eStaticClass()
-    {
-        return DevicesPackage.Literals.CAR;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return DevicesPackage.Literals.CAR;
+	}
 
 } //carImpl

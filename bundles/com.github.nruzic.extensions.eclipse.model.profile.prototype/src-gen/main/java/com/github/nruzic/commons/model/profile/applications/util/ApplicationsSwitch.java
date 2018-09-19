@@ -22,98 +22,133 @@ import org.eclipse.emf.ecore.util.Switch;
  * @see com.github.nruzic.commons.model.profile.applications.ApplicationsPackage
  * @generated
  */
-public class ApplicationsSwitch<T> extends Switch<T>
-{
-    /**
-     * The cached model package
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected static ApplicationsPackage modelPackage;
+public class ApplicationsSwitch<T> extends Switch<T> {
+	/**
+	 * The cached model package
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static ApplicationsPackage modelPackage;
 
-    /**
-     * Creates an instance of the switch.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ApplicationsSwitch()
-    {
-        if (modelPackage == null)
-        {
-            modelPackage = ApplicationsPackage.eINSTANCE;
-        }
-    }
+	/**
+	 * Creates an instance of the switch.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ApplicationsSwitch() {
+		if (modelPackage == null) {
+			modelPackage = ApplicationsPackage.eINSTANCE;
+		}
+	}
 
-    /**
-     * Checks whether this is a switch for the given package.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @param ePackage the package in question.
-     * @return whether this is a switch for the given package.
-     * @generated
-     */
-    @Override
-    protected boolean isSwitchFor(EPackage ePackage)
-    {
-        return ePackage == modelPackage;
-    }
+	/**
+	 * Checks whether this is a switch for the given package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param ePackage the package in question.
+	 * @return whether this is a switch for the given package.
+	 * @generated
+	 */
+	@Override
+	protected boolean isSwitchFor(EPackage ePackage) {
+		return ePackage == modelPackage;
+	}
 
-    /**
-     * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return the first non-null result returned by a <code>caseXXX</code> call.
-     * @generated
-     */
-    @Override
-    protected T doSwitch(int classifierID, EObject theEObject)
-    {
-        switch (classifierID)
-        {
-            case ApplicationsPackage.APPLICATION:
-            {
-                application application = (application)theEObject;
-                T result = caseapplication(application);
-                if (result == null) result = defaultCase(theEObject);
-                return result;
-            }
-            default: return defaultCase(theEObject);
-        }
-    }
+	/**
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
+	@Override
+	protected T doSwitch(int classifierID, EObject theEObject) {
+		switch (classifierID) {
+			case ApplicationsPackage.APPLICATION: {
+				application application = (application)theEObject;
+				T result = caseapplication(application);
+				if (result == null) result = casethickclientapplication(application);
+				if (result == null) result = casethinclientapplication(application);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ApplicationsPackage.THICKCLIENTAPPLICATION: {
+				thickclientapplication thickclientapplication = (thickclientapplication)theEObject;
+				T result = casethickclientapplication(thickclientapplication);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case ApplicationsPackage.THINCLIENTAPPLICATION: {
+				thinclientapplication thinclientapplication = (thinclientapplication)theEObject;
+				T result = casethinclientapplication(thinclientapplication);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			default: return defaultCase(theEObject);
+		}
+	}
 
-    /**
-     * Returns the result of interpreting the object as an instance of '<em>application</em>'.
-     * <!-- begin-user-doc -->
-     * This implementation returns null;
-     * returning a non-null result will terminate the switch.
-     * <!-- end-user-doc -->
-     * @param object the target of the switch.
-     * @return the result of interpreting the object as an instance of '<em>application</em>'.
-     * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-     * @generated
-     */
-    public T caseapplication(application object)
-    {
-        return null;
-    }
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>application</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>application</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseapplication(application object) {
+		return null;
+	}
 
-    /**
-     * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-     * <!-- begin-user-doc -->
-     * This implementation returns null;
-     * returning a non-null result will terminate the switch, but this is the last case anyway.
-     * <!-- end-user-doc -->
-     * @param object the target of the switch.
-     * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
-     * @see #doSwitch(org.eclipse.emf.ecore.EObject)
-     * @generated
-     */
-    @Override
-    public T defaultCase(EObject object)
-    {
-        return null;
-    }
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>thickclientapplication</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>thickclientapplication</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casethickclientapplication(thickclientapplication object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>thinclientapplication</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>thinclientapplication</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casethinclientapplication(thinclientapplication object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch, but this is the last case anyway.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
+	@Override
+	public T defaultCase(EObject object) {
+		return null;
+	}
 
 } //ApplicationsSwitch

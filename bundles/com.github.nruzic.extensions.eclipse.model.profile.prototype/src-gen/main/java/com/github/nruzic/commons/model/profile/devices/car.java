@@ -13,6 +13,5 @@ package com.github.nruzic.commons.model.profile.devices;
  * @model
  * @generated
  */
-public interface car extends device
-{
+public interface car extends device {
 } // car

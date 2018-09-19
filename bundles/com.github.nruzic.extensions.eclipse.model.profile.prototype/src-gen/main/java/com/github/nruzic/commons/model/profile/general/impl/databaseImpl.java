@@ -1,9 +1,9 @@
 /**
  */
-package com.github.nruzic.commons.model.profile.test.impl;
+package com.github.nruzic.commons.model.profile.general.impl;
 
-import com.github.nruzic.commons.model.profile.test.TestPackage;
-import com.github.nruzic.commons.model.profile.test.test;
+import com.github.nruzic.commons.model.profile.general.GeneralPackage;
+import com.github.nruzic.commons.model.profile.general.database;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -19,20 +19,21 @@ import org.eclipse.uml2.uml.Node;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>test</b></em>'.
+ * An implementation of the model object '<em><b>database</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link com.github.nruzic.commons.model.profile.test.impl.testImpl#getBase_Actor <em>Base Actor</em>}</li>
- *   <li>{@link com.github.nruzic.commons.model.profile.test.impl.testImpl#getBase_Component <em>Base Component</em>}</li>
- *   <li>{@link com.github.nruzic.commons.model.profile.test.impl.testImpl#getBase_Node <em>Base Node</em>}</li>
+ *   <li>{@link com.github.nruzic.commons.model.profile.general.impl.databaseImpl#getBase_Actor <em>Base Actor</em>}</li>
+ *   <li>{@link com.github.nruzic.commons.model.profile.general.impl.databaseImpl#getBase_Component <em>Base Component</em>}</li>
+ *   <li>{@link com.github.nruzic.commons.model.profile.general.impl.databaseImpl#getBase_Node <em>Base Node</em>}</li>
+ *   <li>{@link com.github.nruzic.commons.model.profile.general.impl.databaseImpl#getBase_Package <em>Base Package</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class testImpl extends MinimalEObjectImpl.Container implements test {
+public class databaseImpl extends MinimalEObjectImpl.Container implements database {
 	/**
 	 * The cached value of the '{@link #getBase_Actor() <em>Base Actor</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -64,11 +65,21 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 	protected Node base_Node;
 
 	/**
+	 * The cached value of the '{@link #getBase_Package() <em>Base Package</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBase_Package()
+	 * @generated
+	 * @ordered
+	 */
+	protected org.eclipse.uml2.uml.Package base_Package;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected testImpl() {
+	protected databaseImpl() {
 		super();
 	}
 
@@ -79,7 +90,7 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return TestPackage.Literals.TEST;
+		return GeneralPackage.Literals.DATABASE;
 	}
 
 	/**
@@ -93,7 +104,7 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 			base_Actor = (Actor)eResolveProxy(oldBase_Actor);
 			if (base_Actor != oldBase_Actor) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, TestPackage.TEST__BASE_ACTOR, oldBase_Actor, base_Actor));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, GeneralPackage.DATABASE__BASE_ACTOR, oldBase_Actor, base_Actor));
 			}
 		}
 		return base_Actor;
@@ -117,7 +128,7 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 		Actor oldBase_Actor = base_Actor;
 		base_Actor = newBase_Actor;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TestPackage.TEST__BASE_ACTOR, oldBase_Actor, base_Actor));
+			eNotify(new ENotificationImpl(this, Notification.SET, GeneralPackage.DATABASE__BASE_ACTOR, oldBase_Actor, base_Actor));
 	}
 
 	/**
@@ -131,7 +142,7 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 			base_Component = (Component)eResolveProxy(oldBase_Component);
 			if (base_Component != oldBase_Component) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, TestPackage.TEST__BASE_COMPONENT, oldBase_Component, base_Component));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, GeneralPackage.DATABASE__BASE_COMPONENT, oldBase_Component, base_Component));
 			}
 		}
 		return base_Component;
@@ -155,7 +166,7 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 		Component oldBase_Component = base_Component;
 		base_Component = newBase_Component;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TestPackage.TEST__BASE_COMPONENT, oldBase_Component, base_Component));
+			eNotify(new ENotificationImpl(this, Notification.SET, GeneralPackage.DATABASE__BASE_COMPONENT, oldBase_Component, base_Component));
 	}
 
 	/**
@@ -169,7 +180,7 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 			base_Node = (Node)eResolveProxy(oldBase_Node);
 			if (base_Node != oldBase_Node) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, TestPackage.TEST__BASE_NODE, oldBase_Node, base_Node));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, GeneralPackage.DATABASE__BASE_NODE, oldBase_Node, base_Node));
 			}
 		}
 		return base_Node;
@@ -193,7 +204,45 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 		Node oldBase_Node = base_Node;
 		base_Node = newBase_Node;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TestPackage.TEST__BASE_NODE, oldBase_Node, base_Node));
+			eNotify(new ENotificationImpl(this, Notification.SET, GeneralPackage.DATABASE__BASE_NODE, oldBase_Node, base_Node));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public org.eclipse.uml2.uml.Package getBase_Package() {
+		if (base_Package != null && base_Package.eIsProxy()) {
+			InternalEObject oldBase_Package = (InternalEObject)base_Package;
+			base_Package = (org.eclipse.uml2.uml.Package)eResolveProxy(oldBase_Package);
+			if (base_Package != oldBase_Package) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, GeneralPackage.DATABASE__BASE_PACKAGE, oldBase_Package, base_Package));
+			}
+		}
+		return base_Package;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public org.eclipse.uml2.uml.Package basicGetBase_Package() {
+		return base_Package;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBase_Package(org.eclipse.uml2.uml.Package newBase_Package) {
+		org.eclipse.uml2.uml.Package oldBase_Package = base_Package;
+		base_Package = newBase_Package;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, GeneralPackage.DATABASE__BASE_PACKAGE, oldBase_Package, base_Package));
 	}
 
 	/**
@@ -204,15 +253,18 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case TestPackage.TEST__BASE_ACTOR:
+			case GeneralPackage.DATABASE__BASE_ACTOR:
 				if (resolve) return getBase_Actor();
 				return basicGetBase_Actor();
-			case TestPackage.TEST__BASE_COMPONENT:
+			case GeneralPackage.DATABASE__BASE_COMPONENT:
 				if (resolve) return getBase_Component();
 				return basicGetBase_Component();
-			case TestPackage.TEST__BASE_NODE:
+			case GeneralPackage.DATABASE__BASE_NODE:
 				if (resolve) return getBase_Node();
 				return basicGetBase_Node();
+			case GeneralPackage.DATABASE__BASE_PACKAGE:
+				if (resolve) return getBase_Package();
+				return basicGetBase_Package();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -225,14 +277,17 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case TestPackage.TEST__BASE_ACTOR:
+			case GeneralPackage.DATABASE__BASE_ACTOR:
 				setBase_Actor((Actor)newValue);
 				return;
-			case TestPackage.TEST__BASE_COMPONENT:
+			case GeneralPackage.DATABASE__BASE_COMPONENT:
 				setBase_Component((Component)newValue);
 				return;
-			case TestPackage.TEST__BASE_NODE:
+			case GeneralPackage.DATABASE__BASE_NODE:
 				setBase_Node((Node)newValue);
+				return;
+			case GeneralPackage.DATABASE__BASE_PACKAGE:
+				setBase_Package((org.eclipse.uml2.uml.Package)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -246,14 +301,17 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case TestPackage.TEST__BASE_ACTOR:
+			case GeneralPackage.DATABASE__BASE_ACTOR:
 				setBase_Actor((Actor)null);
 				return;
-			case TestPackage.TEST__BASE_COMPONENT:
+			case GeneralPackage.DATABASE__BASE_COMPONENT:
 				setBase_Component((Component)null);
 				return;
-			case TestPackage.TEST__BASE_NODE:
+			case GeneralPackage.DATABASE__BASE_NODE:
 				setBase_Node((Node)null);
+				return;
+			case GeneralPackage.DATABASE__BASE_PACKAGE:
+				setBase_Package((org.eclipse.uml2.uml.Package)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -267,14 +325,16 @@ public class testImpl extends MinimalEObjectImpl.Container implements test {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case TestPackage.TEST__BASE_ACTOR:
+			case GeneralPackage.DATABASE__BASE_ACTOR:
 				return base_Actor != null;
-			case TestPackage.TEST__BASE_COMPONENT:
+			case GeneralPackage.DATABASE__BASE_COMPONENT:
 				return base_Component != null;
-			case TestPackage.TEST__BASE_NODE:
+			case GeneralPackage.DATABASE__BASE_NODE:
 				return base_Node != null;
+			case GeneralPackage.DATABASE__BASE_PACKAGE:
+				return base_Package != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //testImpl
+} //databaseImpl

@@ -71,6 +71,42 @@ Component[appliedStereotypes~="application"] {
     followSVGSymbol:true;
 }
 
+Component[appliedStereotypes~="thin-client"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="thin-client"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="thin-client"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
+Component[appliedStereotypes~="thick-client"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="thick-client"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="thick-client"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
 Component[appliedStereotypes~="database"] > Compartment {
     visible: false;
     showTitle:false;

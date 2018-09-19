@@ -12,32 +12,31 @@ import org.eclipse.emf.ecore.EFactory;
  * @see com.github.nruzic.commons.model.profile.test.TestPackage
  * @generated
  */
-public interface TestFactory extends EFactory
-{
-    /**
-     * The singleton instance of the factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    TestFactory eINSTANCE = com.github.nruzic.commons.model.profile.test.impl.TestFactoryImpl.init();
+public interface TestFactory extends EFactory {
+	/**
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	TestFactory eINSTANCE = com.github.nruzic.commons.model.profile.test.impl.TestFactoryImpl.init();
 
-    /**
-     * Returns a new object of class '<em>test</em>'.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return a new object of class '<em>test</em>'.
-     * @generated
-     */
-    test createtest();
+	/**
+	 * Returns a new object of class '<em>test</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>test</em>'.
+	 * @generated
+	 */
+	test createtest();
 
-    /**
-     * Returns the package supported by this factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @return the package supported by this factory.
-     * @generated
-     */
-    TestPackage getTestPackage();
+	/**
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
+	TestPackage getTestPackage();
 
 } //TestFactory

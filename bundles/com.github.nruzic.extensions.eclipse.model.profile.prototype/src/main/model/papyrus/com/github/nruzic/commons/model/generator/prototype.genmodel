@@ -34,34 +34,84 @@
   <foreignModel>../profile/prototype.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="Com" disposableProviderFactory="true"
       ecorePackage="com.ecore#/">
-    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Github" disposableProviderFactory="true"
-        ecorePackage="com.ecore#//github">
-      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Nruzic" disposableProviderFactory="true"
-          ecorePackage="com.ecore#//github/nruzic">
-        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Commons" disposableProviderFactory="true"
-            ecorePackage="com.ecore#//github/nruzic/commons">
-          <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Model" disposableProviderFactory="true"
-              ecorePackage="com.ecore#//github/nruzic/commons/model">
-            <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Profile" disposableProviderFactory="true"
-                ecorePackage="com.ecore#//github/nruzic/commons/model/profile">
-              <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="General" disposableProviderFactory="true"
-                  ecorePackage="com.ecore#//github/nruzic/commons/model/profile/general">
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Github" basePackage="com"
+        disposableProviderFactory="true" ecorePackage="com.ecore#//github">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Nruzic" basePackage="com.github"
+          disposableProviderFactory="true" ecorePackage="com.ecore#//github/nruzic">
+        <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Commons" basePackage="com.github.nruzic"
+            disposableProviderFactory="true" ecorePackage="com.ecore#//github/nruzic/commons">
+          <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Model" basePackage="com.github.nruzic.commons"
+              disposableProviderFactory="true" ecorePackage="com.ecore#//github/nruzic/commons/model">
+            <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Profile" basePackage="com.github.nruzic.commons.model"
+                disposableProviderFactory="true" ecorePackage="com.ecore#//github/nruzic/commons/model/profile">
+              <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="General" basePackage="com.github.nruzic.commons.model.profile"
+                  disposableProviderFactory="true" ecorePackage="com.ecore#//github/nruzic/commons/model/profile/general">
                 <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/general/subsystem">
                   <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
                       propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/subsystem/base_Package"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/subsystem/base_Actor"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/subsystem/base_Component"/>
+                </genClasses>
+                <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/general/external">
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/external/base_Actor"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/external/base_Class"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/external/base_Component"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/external/base_ExecutionEnvironment"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/external/base_Model"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/external/base_Node"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/external/base_Package"/>
+                </genClasses>
+                <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/general/internal">
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/internal/base_Actor"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/internal/base_Class"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/internal/base_Component"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/internal/base_ExecutionEnvironment"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/internal/base_Model"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/internal/base_Node"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/internal/base_Package"/>
+                </genClasses>
+                <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/general/database">
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/database/base_Actor"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/database/base_Component"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/database/base_Node"/>
+                  <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/general/database/base_Package"/>
                 </genClasses>
               </nestedGenPackages>
               <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Applications"
-                  disposableProviderFactory="true" ecorePackage="com.ecore#//github/nruzic/commons/model/profile/applications">
-                <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/applications/application">
+                  basePackage="com.github.nruzic.commons.model.profile" disposableProviderFactory="true"
+                  ecorePackage="com.ecore#//github/nruzic/commons/model/profile/applications">
+                <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/applications/application"/>
+                <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/applications/thickclientapplication">
                   <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/applications/application/base_Actor"/>
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/applications/thickclientapplication/base_Actor"/>
+                </genClasses>
+                <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/applications/thinclientapplication">
                   <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
-                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/applications/application/base_Component"/>
+                      propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/applications/thinclientapplication/base_Component"/>
                 </genClasses>
               </nestedGenPackages>
-              <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Devices" disposableProviderFactory="true"
-                  ecorePackage="com.ecore#//github/nruzic/commons/model/profile/devices">
+              <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Devices" basePackage="com.github.nruzic.commons.model.profile"
+                  disposableProviderFactory="true" ecorePackage="com.ecore#//github/nruzic/commons/model/profile/devices">
                 <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/devices/device">
                   <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
                       propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/devices/device/base_Actor"/>
@@ -73,8 +123,8 @@
                 <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/devices/car"/>
                 <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/devices/phone"/>
               </nestedGenPackages>
-              <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Test" disposableProviderFactory="true"
-                  ecorePackage="com.ecore#//github/nruzic/commons/model/profile/test">
+              <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Test" basePackage="com.github.nruzic.commons.model.profile"
+                  disposableProviderFactory="true" ecorePackage="com.ecore#//github/nruzic/commons/model/profile/test">
                 <genClasses xsi:type="genmodel:GenClass" ecoreClass="com.ecore#//github/nruzic/commons/model/profile/test/test">
                   <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
                       propertySortChoices="true" ecoreFeature="ecore:EReference com.ecore#//github/nruzic/commons/model/profile/test/test/base_Actor"/>

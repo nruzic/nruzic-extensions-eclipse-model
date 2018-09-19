@@ -14,27 +14,24 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class phoneImpl extends deviceImpl implements phone
-{
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    protected phoneImpl()
-    {
-        super();
-    }
+public class phoneImpl extends deviceImpl implements phone {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected phoneImpl() {
+		super();
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    protected EClass eStaticClass()
-    {
-        return DevicesPackage.Literals.PHONE;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return DevicesPackage.Literals.PHONE;
+	}
 
 } //phoneImpl

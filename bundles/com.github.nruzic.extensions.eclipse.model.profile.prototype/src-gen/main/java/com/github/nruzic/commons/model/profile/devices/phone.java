@@ -13,6 +13,5 @@ package com.github.nruzic.commons.model.profile.devices;
  * @model
  * @generated
  */
-public interface phone extends device
-{
+public interface phone extends device {
 } // phone

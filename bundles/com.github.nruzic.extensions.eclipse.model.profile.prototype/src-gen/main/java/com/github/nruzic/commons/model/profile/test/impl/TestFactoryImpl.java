@@ -18,89 +18,78 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class TestFactoryImpl extends EFactoryImpl implements TestFactory
-{
-    /**
-     * Creates the default factory implementation.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public static TestFactory init()
-    {
-        try
-        {
-            TestFactory theTestFactory = (TestFactory)EPackage.Registry.INSTANCE.getEFactory(TestPackage.eNS_URI);
-            if (theTestFactory != null)
-            {
-                return theTestFactory;
-            }
-        }
-        catch (Exception exception)
-        {
-            EcorePlugin.INSTANCE.log(exception);
-        }
-        return new TestFactoryImpl();
-    }
+public class TestFactoryImpl extends EFactoryImpl implements TestFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static TestFactory init() {
+		try {
+			TestFactory theTestFactory = (TestFactory)EPackage.Registry.INSTANCE.getEFactory(TestPackage.eNS_URI);
+			if (theTestFactory != null) {
+				return theTestFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new TestFactoryImpl();
+	}
 
-    /**
-     * Creates an instance of the factory.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TestFactoryImpl()
-    {
-        super();
-    }
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TestFactoryImpl() {
+		super();
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    @Override
-    public EObject create(EClass eClass)
-    {
-        switch (eClass.getClassifierID())
-        {
-            case TestPackage.TEST: return createtest();
-            default:
-                throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-        }
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case TestPackage.TEST: return createtest();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public test createtest()
-    {
-        testImpl test = new testImpl();
-        return test;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public test createtest() {
+		testImpl test = new testImpl();
+		return test;
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TestPackage getTestPackage()
-    {
-        return (TestPackage)getEPackage();
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TestPackage getTestPackage() {
+		return (TestPackage)getEPackage();
+	}
 
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @deprecated
-     * @generated
-     */
-    @Deprecated
-    public static TestPackage getPackage()
-    {
-        return TestPackage.eINSTANCE;
-    }
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static TestPackage getPackage() {
+		return TestPackage.eINSTANCE;
+	}
 
 } //TestFactoryImpl

@@ -14,13 +14,68 @@
               <eClassifiers xsi:type="ecore:EClass" name="subsystem">
                 <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package"
                     ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Component"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Component"/>
+              </eClassifiers>
+              <eClassifiers xsi:type="ecore:EClass" name="external">
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Component"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Component"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_ExecutionEnvironment"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//ExecutionEnvironment"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Model"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Model"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Node"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Node"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
+              </eClassifiers>
+              <eClassifiers xsi:type="ecore:EClass" name="internal">
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Class"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Class"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Component"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Component"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_ExecutionEnvironment"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//ExecutionEnvironment"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Model"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Model"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Node"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Node"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
+              </eClassifiers>
+              <eClassifiers xsi:type="ecore:EClass" name="database">
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Component"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Component"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Node"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Node"/>
+                <eStructuralFeatures xsi:type="ecore:EReference" name="base_Package"
+                    ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Package"/>
               </eClassifiers>
             </eSubpackages>
             <eSubpackages name="applications" nsURI="http:///com/github/nruzic/commons/model/profile/applications.ecore"
                 nsPrefix="com.github.nruzic.commons.model.profile.applications">
-              <eClassifiers xsi:type="ecore:EClass" name="application">
+              <eClassifiers xsi:type="ecore:EClass" name="application" eSuperTypes="#//github/nruzic/commons/model/profile/applications/thickclientapplication #//github/nruzic/commons/model/profile/applications/thinclientapplication"/>
+              <eClassifiers xsi:type="ecore:EClass" name="thickclientapplication">
+                <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details key="originalName" value="thick-client-application"/>
+                </eAnnotations>
                 <eStructuralFeatures xsi:type="ecore:EReference" name="base_Actor"
                     ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Actor"/>
+              </eClassifiers>
+              <eClassifiers xsi:type="ecore:EClass" name="thinclientapplication">
+                <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details key="originalName" value="thin-client-application"/>
+                </eAnnotations>
                 <eStructuralFeatures xsi:type="ecore:EReference" name="base_Component"
                     ordered="false" lowerBound="1" eType="ecore:EClass ../../../../../../../../../../../org.eclipse.uml2.uml/model/UML.ecore#//Component"/>
               </eClassifiers>
