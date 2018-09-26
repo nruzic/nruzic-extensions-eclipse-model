@@ -1,0 +1,133 @@
+
+Actor[appliedStereotypes~="device"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="device"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="device"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/devices/device.svg";
+}
+
+Actor[appliedStereotypes~="car"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="car"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="car"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/devices/car.svg";
+}
+
+Actor[appliedStereotypes~="phone"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="phone"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="phone"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/devices/smartphone.svg";
+}
+
+Actor[appliedStereotypes~="application"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="application"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="application"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/applications/application.svg";
+}
+
+Actor[appliedStereotypes~="thin-client"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="thin-client"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="thin-client"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/applications/application-web.svg";
+}
+
+Actor[appliedStereotypes~="thick-client"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="thick-client"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="thick-client"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/applications/application-desktop.svg";
+}
+
+Actor[appliedStereotypes~="database"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="database"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="database"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/general/database.svg";
+}

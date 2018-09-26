@@ -1,0 +1,126 @@
+
+Component[appliedStereotypes~="device"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="device"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="device"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
+Component[appliedStereotypes~="car"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="car"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="car"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
+Component[appliedStereotypes~="phone"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="phone"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="phone"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
+Component[appliedStereotypes~="application"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="application"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="application"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
+Component[appliedStereotypes~="thin-client"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="thin-client"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="thin-client"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
+Component[appliedStereotypes~="thick-client"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="thick-client"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="thick-client"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
+Component[appliedStereotypes~="database"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="database"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="database"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}

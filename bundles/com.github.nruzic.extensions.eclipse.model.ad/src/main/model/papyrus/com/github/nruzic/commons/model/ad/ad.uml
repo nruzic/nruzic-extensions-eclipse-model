@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_GWnRQL2HEeiH15Nkc1mX8A" name="ad">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_Gu84wL2HEeiH15Nkc1mX8A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KoGUkL2HEeiH15Nkc1mX8A" name="Software Design"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jLl4gL2HEeiH15Nkc1mX8A" name="Deployment View"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kJ-zYL2HEeiH15Nkc1mX8A" name="Operational View"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kQdO0L2HEeiH15Nkc1mX8A" name="Development View"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kWmTEL2HEeiH15Nkc1mX8A" name="Context View"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kbpLIL2HEeiH15Nkc1mX8A" name="Functional View"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_k7o50L2HEeiH15Nkc1mX8A" name="Information View"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mNwB8L2HEeiH15Nkc1mX8A" name="Concurrency View"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_OtD3cL2KEeiH15Nkc1mX8A" name="defines" informationSource="_kWmTEL2HEeiH15Nkc1mX8A" informationTarget="_KoGUkL2HEeiH15Nkc1mX8A"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_vdlHML2KEeiH15Nkc1mX8A" name="defines" informationSource="_jLl4gL2HEeiH15Nkc1mX8A" informationTarget="_KoGUkL2HEeiH15Nkc1mX8A"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_b5kfkL2LEeiH15Nkc1mX8A" name="defines" informationSource="_kJ-zYL2HEeiH15Nkc1mX8A" informationTarget="_jLl4gL2HEeiH15Nkc1mX8A"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_lVmVIL2LEeiH15Nkc1mX8A" name="defines" informationSource="_kQdO0L2HEeiH15Nkc1mX8A" informationTarget="_KoGUkL2HEeiH15Nkc1mX8A"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fmQacL2QEeiH15Nkc1mX8A" memberEnd="_fmRokr2QEeiH15Nkc1mX8A _fmSPor2QEeiH15Nkc1mX8A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fmRokL2QEeiH15Nkc1mX8A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fmRokb2QEeiH15Nkc1mX8A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fmSPor2QEeiH15Nkc1mX8A" name="software design" type="_KoGUkL2HEeiH15Nkc1mX8A" association="_fmQacL2QEeiH15Nkc1mX8A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fmRokr2QEeiH15Nkc1mX8A" name="information view" type="_k7o50L2HEeiH15Nkc1mX8A" aggregation="shared" association="_fmQacL2QEeiH15Nkc1mX8A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fmSPoL2QEeiH15Nkc1mX8A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fmSPob2QEeiH15Nkc1mX8A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gkUlML2QEeiH15Nkc1mX8A" memberEnd="_gkVMQr2QEeiH15Nkc1mX8A _gkVzUb2QEeiH15Nkc1mX8A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gkVMQL2QEeiH15Nkc1mX8A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gkVMQb2QEeiH15Nkc1mX8A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gkVzUb2QEeiH15Nkc1mX8A" name="software design" type="_KoGUkL2HEeiH15Nkc1mX8A" association="_gkUlML2QEeiH15Nkc1mX8A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gkVMQr2QEeiH15Nkc1mX8A" name="concurrency view" type="_mNwB8L2HEeiH15Nkc1mX8A" aggregation="shared" association="_gkUlML2QEeiH15Nkc1mX8A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gkVMQ72QEeiH15Nkc1mX8A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gkVzUL2QEeiH15Nkc1mX8A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_h97ccL2QEeiH15Nkc1mX8A" memberEnd="_h98Dgr2QEeiH15Nkc1mX8A _h98qkL2QEeiH15Nkc1mX8A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h98DgL2QEeiH15Nkc1mX8A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h98Dgb2QEeiH15Nkc1mX8A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_h98qkL2QEeiH15Nkc1mX8A" name="software design" type="_KoGUkL2HEeiH15Nkc1mX8A" association="_h97ccL2QEeiH15Nkc1mX8A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_h98Dgr2QEeiH15Nkc1mX8A" name="functional view" type="_kbpLIL2HEeiH15Nkc1mX8A" aggregation="shared" association="_h97ccL2QEeiH15Nkc1mX8A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h98Dg72QEeiH15Nkc1mX8A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h98DhL2QEeiH15Nkc1mX8A" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

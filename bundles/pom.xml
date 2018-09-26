@@ -12,5 +12,6 @@
 
     <modules>
         <module>com.github.nruzic.extensions.eclipse.model.profile.prototype</module>
+        <module>com.github.nruzic.extensions.eclipse.model.ad</module>
     </modules>
 </project>
