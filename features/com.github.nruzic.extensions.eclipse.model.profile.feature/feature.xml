@@ -2,7 +2,7 @@
 <feature
       id="com.github.nruzic.extensions.eclipse.model.profile.feature"
       label="Nruzic EMF Profile Feature"
-      version="1.0.10"
+      version="1.0.11.qualifier"
       provider-name="nruzic">
 
    <description url="http://github.com/nruzic/nruzic-extensions-eclipse-model">
