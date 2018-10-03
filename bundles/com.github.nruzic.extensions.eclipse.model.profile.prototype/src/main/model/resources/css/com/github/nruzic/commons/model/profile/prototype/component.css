@@ -124,3 +124,39 @@ Component[appliedStereotypes~="database"] {
     displayName:true;
     followSVGSymbol:true;
 }
+
+Component[appliedStereotypes~="process"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="process"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="process"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}
+
+Component[appliedStereotypes~="process-group"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="process-group"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Component[appliedStereotypes~="process-group"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+}

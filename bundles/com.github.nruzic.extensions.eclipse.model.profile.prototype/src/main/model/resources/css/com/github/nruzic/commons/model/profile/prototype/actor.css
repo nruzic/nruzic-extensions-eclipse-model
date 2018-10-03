@@ -131,3 +131,41 @@ Actor[appliedStereotypes~="database"] {
     followSVGSymbol:true;
     svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/general/database.svg";
 }
+
+Actor[appliedStereotypes~="process"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="process"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="process"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/general/process.svg";
+}
+
+Actor[appliedStereotypes~="process-group"] > Compartment {
+    visible: false;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="process-group"] > Compartment[kind="symbol"] {
+    visible:true;
+    showTitle:false;
+}
+
+Actor[appliedStereotypes~="process-group"] {
+    maintainSymbolRatio:false;
+    fillColor:white;
+    displayBorder:false;
+    displayName:true;
+    followSVGSymbol:true;
+    svgFile: "platform:/plugin/com.github.nruzic.extensions.eclipse.model.profile.prototype/com/github/nruzic/commons/model/profile/prototype/general/process-group.svg";
+}
