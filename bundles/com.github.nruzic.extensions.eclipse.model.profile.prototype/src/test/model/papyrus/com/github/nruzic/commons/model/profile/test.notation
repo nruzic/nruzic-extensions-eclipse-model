@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <notation:Diagram xmi:id="_E-C9gMiYEei7MJJ_cTIAqQ" type="PapyrusUMLClassDiagram" name="Package Diagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_EURLQMiZEein--hEdoAp9w" type="Package_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_EUfNsMiZEein--hEdoAp9w" type="Package_NameLabel"/>
@@ -141,8 +141,112 @@
         <element xmi:type="uml:Port" href="test.uml#_jWsWUMjtEeirMf4DDNAZUQ"/>
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jXAfYcjtEeirMf4DDNAZUQ" x="320" y="311"/>
       </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_TARK8MlwEeifUoJ_yQOWOw" type="StereotypeBrace">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y1RPcMlwEeifUoJ_yQOWOw" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Y1R2gMlwEeifUoJ_yQOWOw" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TARyAMlwEeifUoJ_yQOWOw" visible="false" type="StereotypePropertyBrace">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_aYjSAMluEei5F-qZE_Engw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_TARyAclwEeifUoJ_yQOWOw"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TASZEMlwEeifUoJ_yQOWOw" visible="false" type="StereotypePropertyBrace">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_fQwXEMluEei5F-qZE_Engw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_TASZEclwEeifUoJ_yQOWOw"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TASZEslwEeifUoJ_yQOWOw" visible="false" type="StereotypePropertyBrace">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_iCgtAMluEei5F-qZE_Engw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_TASZE8lwEeifUoJ_yQOWOw"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_AK_C0Ml3EeikE4ZoqT1cWQ" visible="false" type="StereotypePropertyBrace">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_6Rk8RMlyEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_AK_C0cl3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_AK_C0sl3EeikE4ZoqT1cWQ" visible="false" type="StereotypePropertyBrace">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_sMBhYMlzEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_AK_C08l3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_AK_p4Ml3EeikE4ZoqT1cWQ" visible="false" type="StereotypePropertyBrace">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_6Rk8RclyEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_AK_p4cl3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ALAQ8Ml3EeikE4ZoqT1cWQ" visible="false" type="StereotypePropertyBrace">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_6Rk8RslyEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ALAQ8cl3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ALA4AMl3EeikE4ZoqT1cWQ" visible="false" type="StereotypePropertyBrace">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_QHjUkMl0EeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ALA4Acl3EeikE4ZoqT1cWQ"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_TARK8clwEeifUoJ_yQOWOw"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_TARK8slwEeifUoJ_yQOWOw" name="stereotype" stringValue="com::github::nruzic::commons::model::profile::general::subsystem"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_TSf5sLEiEeitgY-GtHetWw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TARK88lwEeifUoJ_yQOWOw"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_TAZGwMlwEeifUoJ_yQOWOw" visible="false" type="StereotypeCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ceeKwMlwEeifUoJ_yQOWOw" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ceeKwclwEeifUoJ_yQOWOw" key="visible" value="true"/>
+        </eAnnotations>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_TAZGwclwEeifUoJ_yQOWOw"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_TAZGwslwEeifUoJ_yQOWOw" name="stereotype" stringValue="com::github::nruzic::commons::model::profile::general::subsystem"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_TSf5sLEiEeitgY-GtHetWw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TAZGw8lwEeifUoJ_yQOWOw"/>
+      </children>
       <element xmi:type="uml:Component" href="test.uml#_3JjWEMibEeiKfd_45uo7RA"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3Jqq0cibEeiKfd_45uo7RA" x="220" y="140" width="581" height="321"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_TATnMMlwEeifUoJ_yQOWOw" type="StereotypeComment">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eMWB0slwEeifUoJ_yQOWOw" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eMWB08lwEeifUoJ_yQOWOw" key="visible" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_TAXRkMlwEeifUoJ_yQOWOw" type="StereotypeCompartment">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eMWB0MlwEeifUoJ_yQOWOw" source="PapyrusCSSForceValue">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eMWB0clwEeifUoJ_yQOWOw" key="visible" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:DecorationNode" xmi:id="_TAXRlMlwEeifUoJ_yQOWOw" type="StereotypeProperty">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f9YhoMlwEeifUoJ_yQOWOw" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f9YhoclwEeifUoJ_yQOWOw" key="visible" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_aYjSAMluEei5F-qZE_Engw"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_TAXRlclwEeifUoJ_yQOWOw"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ALBfEMl3EeikE4ZoqT1cWQ" visible="false" type="StereotypeProperty">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_6Rk8RMlyEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ALBfEcl3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ALCGIMl3EeikE4ZoqT1cWQ" visible="false" type="StereotypeProperty">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_sMBhYMlzEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ALCGIcl3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ALCGIsl3EeikE4ZoqT1cWQ" type="StereotypeProperty">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mt6WEMl3EeikE4ZoqT1cWQ" source="PapyrusCSSForceValue">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mt69IMl3EeikE4ZoqT1cWQ" key="visible" value="true"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_6Rk8RclyEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ALCGI8l3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ALCGJMl3EeikE4ZoqT1cWQ" visible="false" type="StereotypeProperty">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_6Rk8RslyEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ALCGJcl3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ALCtMMl3EeikE4ZoqT1cWQ" visible="false" type="StereotypeProperty">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_QHjUkMl0EeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ALCtMcl3EeikE4ZoqT1cWQ"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_ALCGJsl3EeikE4ZoqT1cWQ" visible="false" type="StereotypeProperty">
+          <element xmi:type="uml:Property" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_6Rk8R8lyEeiBHPU_qjbGlA"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_ALCGJ8l3EeikE4ZoqT1cWQ"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_TAXRkclwEeifUoJ_yQOWOw"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_TAXRkslwEeifUoJ_yQOWOw" name="stereotype" stringValue="com::github::nruzic::commons::model::profile::general::subsystem"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_TSf5sLEiEeitgY-GtHetWw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TAXRk8lwEeifUoJ_yQOWOw"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_TATnMclwEeifUoJ_yQOWOw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_TAVcYMlwEeifUoJ_yQOWOw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Component" href="test.uml#_3JjWEMibEeiKfd_45uo7RA"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TATnMslwEeifUoJ_yQOWOw" x="520"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_2adbcMibEeiKfd_45uo7RA" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_2adbccibEeiKfd_45uo7RA"/>
@@ -170,6 +274,16 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J0kOM8lhEei5F-qZE_Engw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J0kONMlhEei5F-qZE_Engw"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J0kONclhEei5F-qZE_Engw"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_TAVcYclwEeifUoJ_yQOWOw" type="StereotypeCommentLink" source="_3Jqq0MibEeiKfd_45uo7RA" target="_TATnMMlwEeifUoJ_yQOWOw">
+      <styles xmi:type="notation:FontStyle" xmi:id="_TAVcYslwEeifUoJ_yQOWOw"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_TAWqgMlwEeifUoJ_yQOWOw" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Component" href="test.uml#_3JjWEMibEeiKfd_45uo7RA"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TAVcY8lwEeifUoJ_yQOWOw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TAVcZMlwEeifUoJ_yQOWOw" id="(0.6196213425129088,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TAWDcMlwEeifUoJ_yQOWOw" id="(0.41346153846153844,1.0)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
