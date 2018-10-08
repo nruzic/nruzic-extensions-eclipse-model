@@ -60,6 +60,12 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://NRUZIC_COMMONS_MODEL/com/github/nruzic/commons/model/profile/prototype.uml#_dxg8YLHJEei7lrpzegwxFQ"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oMEHkMmiEeikE4ZoqT1cWQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oMFVsMmiEeikE4ZoqT1cWQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
   </uml:Model>
   <general:use xmi:id="_LGjXYMiZEein--hEdoAp9w" base_Dependency="_FO_uIMiZEein--hEdoAp9w"/>
   <general:p2prequestreply xmi:id="_J0NB0MlhEei5F-qZE_Engw" base_Connector="_RkyTkMjwEeitfPuaOIUXew"/>
