@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
         <artifactId>com.github.nruzic.extensions.eclipse.model.features</artifactId>
-        <version>1.0.13</version>
+        <version>1.0.14-SNAPSHOT</version>
     </parent>
 
     <artifactId>com.github.nruzic.extensions.eclipse.model.profile.feature</artifactId>
