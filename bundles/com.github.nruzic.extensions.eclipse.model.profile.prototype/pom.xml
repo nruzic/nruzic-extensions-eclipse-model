@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.github.nruzic.extensions.eclipse.model</groupId>
         <artifactId>com.github.nruzic.extensions.eclipse.model.bundles</artifactId>
-        <version>1.0.19-SNAPSHOT</version>
+        <version>1.0.19</version>
     </parent>
 
     <artifactId>com.github.nruzic.extensions.eclipse.model.profile.prototype</artifactId>
