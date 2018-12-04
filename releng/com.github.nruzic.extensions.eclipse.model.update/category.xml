@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.github.nruzic.extensions.eclipse.model.profile.feature_1.0.20.jar" id="com.github.nruzic.extensions.eclipse.model.profile.feature" version="1.0.20">
+   <feature url="features/com.github.nruzic.extensions.eclipse.model.profile.feature_1.0.21.qualifier.jar" id="com.github.nruzic.extensions.eclipse.model.profile.feature" version="1.0.21.qualifier">
       <category name="nruzic.eclipse.model.category"/>
    </feature>
    <category-def name="nruzic.eclipse.model.category" label="Nruzic EMF Extensions"/>
